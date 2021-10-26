@@ -33,7 +33,7 @@ public class BouncerPflanztAn extends BouncerApp {
      */
     private void plant() {
         while (bouncer.canMoveForward()) {
-           plantIfOnPlotOrMove();
+            plantIfOnPlotOrMove();
         }
     }
 
@@ -64,7 +64,7 @@ public class BouncerPflanztAn extends BouncerApp {
      */
     private void enterPlot() {
         turnRight();
-        while(bouncer.canMoveForward()) {
+        while (bouncer.canMoveForward()) {
             bouncer.move();
         }
     }
@@ -77,7 +77,7 @@ public class BouncerPflanztAn extends BouncerApp {
      */
     private void exitPlot() {
         turnAround();
-        while(bouncer.canNotMoveRight()) {
+        while (bouncer.canNotMoveRight()) {
             bouncer.move();
         }
         turnRight();
